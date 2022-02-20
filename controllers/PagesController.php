@@ -22,6 +22,6 @@ class PagesController{
         "name"=>$_POST["name"]
         ],"users");
 
-        header("Location: /");
+        redirect('/');
     }
 }
