@@ -18,8 +18,9 @@ class PagesController{
         view("order");
     }
     public function createUser(){
+        
         App::get("database")->insert([
-        "name"=>$_POST["name"]
+        "name"=>request('name')
         ],"users");
 
         redirect('/');
