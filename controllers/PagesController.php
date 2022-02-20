@@ -1,5 +1,5 @@
 <?php
-
+use core\App;
 class PagesController{
     public function home(){
         $users=App::get("database")->selectAll("users");
