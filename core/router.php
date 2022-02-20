@@ -29,7 +29,7 @@ class Router{
             
             die("404 page");
         }
-        $explosion=explode("@",$this->routes["$method"][$uri]);
+        $explosion=$this->routes[$method][$uri];
         $this->callMethod($explosion[0],$explosion[1]);
         
     }
